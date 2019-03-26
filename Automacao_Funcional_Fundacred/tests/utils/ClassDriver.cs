@@ -44,10 +44,12 @@ namespace Automacao_Funcional_Fundacred.tests.steps
 
             if (Environment.OSVersion.Platform == PlatformID.Win32NT)
             {
+                //WINDOWS
                 path = $"{currentPath}\\..\\..\\..\\WebDriverWindows";
             }
             else
             {
+                //LINUX
                 path = "/usr/bin/";
             }
 
@@ -55,7 +57,7 @@ namespace Automacao_Funcional_Fundacred.tests.steps
             options.AddArguments("--no-sandbox"); // Bypass OS security model
             options.AddArguments("--disable-gpu"); // applicable to windows os only
             options.AddArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-            options.AddArguments("--headless");
+            options.AddArguments("--headless"); 
             driver = new ChromeDriver(path, options);
 
             Driver.Manage().Window.Maximize();
