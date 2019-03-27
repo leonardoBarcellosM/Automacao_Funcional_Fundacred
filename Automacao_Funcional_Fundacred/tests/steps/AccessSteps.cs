@@ -20,10 +20,8 @@ namespace Automacao_Funcional_Fundacred.tests.steps
         public void ThenValidarOCarregamentoComSucesso()
         {
             var result = pageActions.ValidAccessPage();
-            result = false;
+            //result = false;
             Assert.True(result, "Erro ao acessar a endereço solicitado");
-
-            
         }
     }
 }
