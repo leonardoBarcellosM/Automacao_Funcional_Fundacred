@@ -45,7 +45,7 @@ namespace Automacao_Funcional_Fundacred.tests.steps
                     break;
             }
 
-            Assert.True(result, "Erro - " + arg + "");
+            Assert.True(result, "Erro - " + arg);
         }
 
 

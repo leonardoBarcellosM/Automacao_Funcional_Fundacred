@@ -5,8 +5,6 @@ namespace Automacao_Funcional_Fundacred.tests.steps
     [Binding]
     class ScopeFeatures
     {
-        private ClassUtilities util = new ClassUtilities();
-   
         [BeforeTestRun]
         public static void BeforeTestRun()
         {
@@ -31,7 +29,6 @@ namespace Automacao_Funcional_Fundacred.tests.steps
 
         }
 
-
         [AfterStep]
         public static void AfterStep()
         {
@@ -41,7 +38,7 @@ namespace Automacao_Funcional_Fundacred.tests.steps
         [AfterScenario]
         public static void AfterScenario()
         {
-            //Assert.True(ClassInfo.GetInstance().ResultScenario, ClassInfo.GetInstance().LogMessage, null);
+            
         }
 
         [AfterFeature]
